@@ -3,7 +3,7 @@ import styles from '../../styles/Investors.module.css'
 import Link from 'next/link';
 
 export const getStaticProps = async() => {
-    const res = await fetch('http://localhost:1900/api/v1/customers');
+    const res = await fetch('https://griffin-be.herokuapp.com/api/v1/customers');
     const data = await res.json();
     // console.log(data)
     return {
